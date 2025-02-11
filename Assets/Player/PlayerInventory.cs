@@ -9,6 +9,7 @@ namespace Farmer.Player
     {
         [SerializeField] private ItemData TEST_item;
         [field: SerializeField] public int Capacity { get; private set; } = 36;
+        [field: SerializeField] public int HotbarCapacity { get; private set; } = 12;
         public ArrayInventory Inventory;
 
         private void OnEnable()
@@ -24,8 +25,6 @@ namespace Farmer.Player
 
         public void TryMoveItem(int fromSlot, int toSlot)
         {
-            Debug.Log("Trying to move item from " + fromSlot + " to " + toSlot);
-            
             if(fromSlot < 0 || fromSlot >= Capacity || toSlot < 0 || toSlot >= Capacity)
                 return;
             
