@@ -13,7 +13,6 @@ namespace Farmer.UI
         
         public void OnDrop(PointerEventData eventData)
         {
-            Debug.Log("dropped item on slot " + slotIndex);
             var itemData = eventData.pointerDrag.GetComponent<InventoryItemUI>();
             OnRequestItemMove?.Invoke(itemData.slotIndex, slotIndex);
         }

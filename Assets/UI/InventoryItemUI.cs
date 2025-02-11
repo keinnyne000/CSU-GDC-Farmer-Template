@@ -18,6 +18,7 @@ namespace Farmer.UI
             image.sprite = data.Sprite;
             image.enabled = true;
             qtyText.text = qty.ToString();
+            qtyText.raycastTarget = false;
         }
 
         public void OnBeginDrag(PointerEventData eventData)

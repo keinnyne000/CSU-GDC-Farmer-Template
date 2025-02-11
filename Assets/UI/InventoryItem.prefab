@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 7312217660299822646}
   - component: {fileID: 8947944747275680612}
   - component: {fileID: 6325116344400612597}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: QuantityText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
