@@ -1,37 +1,43 @@
 fileFormatVersion: 2
-guid: d0075336d47b5da23bbe5c9ab8faea1f
+guid: c442c329671b75f4c8f97eb0bd0ffa6f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8388493098682238773
-    second: RocksnStumps_0
+      213: 4723107735738678597
+    second: Idle_0
   - first:
-      213: 4571232000365938513
-    second: RocksnStumps_1
+      213: -7385789195546760866
+    second: Idle_1
   - first:
-      213: -3902342117587033723
-    second: RocksnStumps_2
+      213: 3234629978573100161
+    second: Idle_2
   - first:
-      213: -8241272886962831783
-    second: RocksnStumps_3
+      213: 6373048116405451881
+    second: Idle_3
   - first:
-      213: 3219815206899887156
-    second: RocksnStumps_4
+      213: 7264182050183361747
+    second: Idle_4
   - first:
-      213: -5648349825541759088
-    second: RocksnStumps_5
+      213: -2834552850196481573
+    second: Idle_5
   - first:
-      213: 3069812252480884111
-    second: RocksnStumps_6
+      213: 3278449094680734212
+    second: Idle_6
   - first:
-      213: -6597616450736263110
-    second: RocksnStumps_7
+      213: 3384493420599841878
+    second: Idle_7
   - first:
-      213: 4838682750183946600
-    second: RocksnStumps_8
+      213: -2331352242086191015
+    second: Idle_8
   - first:
-      213: -8599317421583501060
-    second: RocksnStumps_9
+      213: -3914248031228685145
+    second: Idle_9
+  - first:
+      213: 7132915409514813599
+    second: Idle_10
+  - first:
+      213: -2055793278435719954
+    second: Idle_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,221 +133,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RocksnStumps_0
+      name: Idle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 15
+        x: 10
+        y: 70
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bc8ba3c88f5169b80800000000000000
-      internalID: -8388493098682238773
+      spriteID: 6d7824704269b5d4e86c058371da9c78
+      internalID: -1326898405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksnStumps_1
+      name: Idle_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 49
-        width: 16
-        height: 14
+        x: 42
+        y: 70
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 157c5bfe847407f30800000000000000
-      internalID: 4571232000365938513
+      spriteID: fbc17841d92f68d4a938285089dfeaba
+      internalID: -362991548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksnStumps_2
+      name: Idle_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 32
-        width: 30
-        height: 32
+        x: 74
+        y: 70
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 581ed21058818d9c0800000000000000
-      internalID: -3902342117587033723
+      spriteID: 8dda81067f75db844bcdec3e7aaba537
+      internalID: -401656660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksnStumps_3
+      name: Idle_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 40
-        width: 9
-        height: 7
+        x: 106
+        y: 70
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95eb58339fd11ad80800000000000000
-      internalID: -8241272886962831783
+      spriteID: 930d0022258f5c646a5137484816ece7
+      internalID: -1612136947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksnStumps_4
+      name: Idle_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 15
+        x: 11
+        y: 38
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43c2ba11fd41fac20800000000000000
-      internalID: 3219815206899887156
+      spriteID: 20a9cf9801a37024c8122a783ca50209
+      internalID: 525948533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksnStumps_5
+      name: Idle_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 17
-        width: 16
-        height: 14
+        x: 43
+        y: 38
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 09f917982c70d91b0800000000000000
-      internalID: -5648349825541759088
+      spriteID: 5a3ae045915a6354887e9635d0c4bafc
+      internalID: -341363491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksnStumps_6
+      name: Idle_6
       rect:
         serializedVersion: 2
-        x: 17
-        y: 24
-        width: 11
-        height: 8
+        x: 75
+        y: 38
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f8dc344aaf92a9a20800000000000000
-      internalID: 3069812252480884111
+      spriteID: 30edad54943da4347a60eaa14ced09e0
+      internalID: -1021125447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksnStumps_7
+      name: Idle_7
       rect:
         serializedVersion: 2
-        x: 31
-        y: 15
-        width: 18
-        height: 18
+        x: 107
+        y: 38
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3077913bce8074a0800000000000000
-      internalID: -6597616450736263110
+      spriteID: 990aebbcb4c799d42b2ddf9a6b5e2700
+      internalID: -1380686974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksnStumps_8
+      name: Idle_8
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
+        x: 11
+        y: 6
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 86936892354762340800000000000000
-      internalID: 4838682750183946600
+      spriteID: 43ebbace85a654940a7af5ed26c593f6
+      internalID: 571450398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RocksnStumps_9
+      name: Idle_9
       rect:
         serializedVersion: 2
-        x: 15
-        y: 0
-        width: 18
-        height: 17
+        x: 43
+        y: 6
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cf8ffafbd5619a880800000000000000
-      internalID: -8599317421583501060
+      spriteID: 5b6ca0eb9cf273641961b34cc88bc9a4
+      internalID: 1948451321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 6
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a9cbaf534a4104fb53d3f2bb15a472
+      internalID: 1433616495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 6
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a87140972de8949a122646bb128d51
+      internalID: -263472524
       vertices: []
       indices: 
       edges: []
@@ -350,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: faf9498d5378fbf46804332996bf0847
     internalID: 0
     vertices: []
     indices: 
@@ -360,16 +410,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RocksnStumps_0: -8388493098682238773
-      RocksnStumps_1: 4571232000365938513
-      RocksnStumps_2: -3902342117587033723
-      RocksnStumps_3: -8241272886962831783
-      RocksnStumps_4: 3219815206899887156
-      RocksnStumps_5: -5648349825541759088
-      RocksnStumps_6: 3069812252480884111
-      RocksnStumps_7: -6597616450736263110
-      RocksnStumps_8: 4838682750183946600
-      RocksnStumps_9: -8599317421583501060
+      Idle_0: -1326898405
+      Idle_1: -362991548
+      Idle_10: 1433616495
+      Idle_11: -263472524
+      Idle_2: -401656660
+      Idle_3: -1612136947
+      Idle_4: 525948533
+      Idle_5: -341363491
+      Idle_6: -1021125447
+      Idle_7: -1380686974
+      Idle_8: 571450398
+      Idle_9: 1948451321
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
