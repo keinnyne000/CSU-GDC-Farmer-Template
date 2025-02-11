@@ -1,5 +1,3 @@
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Farmer.Player
@@ -8,10 +6,8 @@ namespace Farmer.Player
     {
         Rigidbody2D rb;
         InputActions inputActions;
-        [SerializeField] private PlayerMovementInfo info;
+        [SerializeField] PlayerMovementInfo info;
 
-        Vector2 recentMovement;
-        Vector2 lastInput;
         void Start()
         {
             inputActions = new();
@@ -21,16 +17,14 @@ namespace Farmer.Player
 
         void Update()
         {
+            Move();
+        }
+
+        void Move()
+        {
             Vector2 input = inputActions.Gameplay.WASD.ReadValue<Vector2>();
-            Vector2 dir = input;
-            if (lastInput != input && input.magnitude > 1)
-            {
-                dir = math.normalize(math.normalize(input) - math.normalize(lastInput));
-            }
-            lastInput = input;
-            
-            Vector2 movement = dir * info.MovementSpeed;
-            recentMovement = movement;
+            input = input.normalized;
+            Vector2 movement = input * info.MovementSpeed;
             rb.linearVelocity = movement;
         }
     }
