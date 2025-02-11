@@ -1,21 +1,18 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace Farmer.Inventories
 {
-    public class ValueListInventory : IInventory
+    public class ArrayInventory : IInventory
     {
-        public int Capacity { get; private set; }
-        List<(uint, int)> items = new(); // (id, qty)
+        private (uint, int)[] items;
         
-        public ValueListInventory(int capacity)
+        public ArrayInventory(int capacity)
         {
-            Capacity = capacity;
+            items = new (uint, int)[capacity];
         }
-
+        
         public event Action OnUpdated;
-
         public (uint, int)[] GetAll()
         {
             return items.ToArray();
@@ -23,8 +20,7 @@ namespace Farmer.Inventories
 
         public void SetAll((uint, int)[] items)
         {
-            this.items = items.ToList();
-            OnUpdated?.Invoke();
+            this.items = items.ToArray();
         }
 
         public bool HasItem(int slot)
@@ -43,7 +39,7 @@ namespace Farmer.Inventories
 
         public int WhereItem(uint id)
         {
-            for (int i = 0; i < items.Count; i++)
+            for (int i = 0; i < items.Length; i++)
                 if (items[i].Item1 == id)
                     return i;
             
@@ -57,7 +53,7 @@ namespace Farmer.Inventories
 
         public bool PushItem(uint id, int qty, int slot)
         {
-            if (slot < 0 || slot >= Capacity)
+            if (slot < 0 || slot >= items.Length)
                 return false;
             
             items[slot] = (id, qty);
@@ -76,17 +72,17 @@ namespace Farmer.Inventories
         public (uint, int) PopItem(int slot, int qty)
         {
             var item = items[slot];
-            if (item.Item2 > qty)
-            {
-                items[slot] = (item.Item1, item.Item2 - qty);
-                OnUpdated?.Invoke();
-                return (item.Item1, qty);
-            }
-            else
+            if (item.Item2 <= qty)
             {
                 items[slot] = (0, 0);
                 OnUpdated?.Invoke();
                 return item;
+            }
+            else
+            {
+                items[slot] = (item.Item1, item.Item2 - qty);
+                OnUpdated?.Invoke();
+                return (item.Item1, qty);
             }
         }
     }
