@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Farmer.Inventories
 {
@@ -11,7 +12,18 @@ namespace Farmer.Inventories
         {
             Capacity = capacity;
         }
-        
+
+        public List<(uint, int)> GetAll()
+        {
+            // ```.ToList()``` clones the list so if we modify the return data, the original list is not affected
+            return items.ToList();
+        }
+
+        public void SetAll(List<(uint, int)> items)
+        {
+            this.items = items;
+        }
+
         public bool HasItem(int slot)
         {
             return (items[slot].Item1 != 0);
