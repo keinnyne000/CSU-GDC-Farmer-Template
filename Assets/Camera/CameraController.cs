@@ -9,8 +9,7 @@ namespace Farmer.Camera
         
         void LateUpdate()
         {
-            transform.position =
-                Vector2.Lerp(transform.position, player.transform.position, lerpStrength * Time.deltaTime);
+            transform.position = player.transform.position;
         }
     }
 }
