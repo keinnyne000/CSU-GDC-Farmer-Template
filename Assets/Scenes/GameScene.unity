@@ -2479,7 +2479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1905268870}
-  lerpStrength: 2
 --- !u!1 &1673453565
 GameObject:
   m_ObjectHideFlags: 0
@@ -65610,6 +65609,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1217320019630029670, guid: 2d8a219bbfab1d9c196df3dd95ee2485, type: 3}
       insertIndex: 2
       addedObject: {fileID: 5912779488347411254}
+    - targetCorrespondingSourceObject: {fileID: 1217320019630029670, guid: 2d8a219bbfab1d9c196df3dd95ee2485, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 5912779488347411261}
   m_SourcePrefab: {fileID: 100100000, guid: 2d8a219bbfab1d9c196df3dd95ee2485, type: 3}
 --- !u!50 &5912779488347411253 stripped
 Rigidbody2D:
@@ -65635,6 +65637,19 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 647711830208413513, guid: 2d8a219bbfab1d9c196df3dd95ee2485, type: 3}
   m_PrefabInstance: {fileID: 5912779488347411252}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5912779488347411261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905268870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef905844904472ba24edf396759a87c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capacity: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
