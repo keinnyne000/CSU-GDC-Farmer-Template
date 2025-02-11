@@ -1,4 +1,5 @@
 using UnityEngine;
+using Farmer.PlayerInput;
 
 namespace Farmer.Player
 {

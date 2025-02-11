@@ -8,8 +8,8 @@ namespace Farmer.GlobalStateManagement
         public static GlobalState Instance { get; private set; }
         public event Action<GameState> OnGameStateChanged;
         public GameState CurrentState { get; private set; }
-        
-        private void OnEnable()
+
+        private void Awake()
         {
             if (Instance == null)
                 Instance = this;
@@ -17,6 +17,11 @@ namespace Farmer.GlobalStateManagement
                 Destroy(gameObject);
         }
         
+        private void Start()
+        {
+            SetState(GameState.InGame);
+        }
+
         public void SetState(GameState state)
         {
             CurrentState = state;
