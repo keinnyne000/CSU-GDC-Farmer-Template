@@ -121,112 +121,13 @@ namespace Farmer.PlayerInput
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Hotbar_1"",
-                    ""type"": ""Button"",
-                    ""id"": ""a6befdde-1dab-42cd-b37a-e883995a7139"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_2"",
+                    ""name"": ""Hotbar"",
                     ""type"": ""Button"",
                     ""id"": ""f2b86e4c-05a6-4142-a269-d51bfe4c9fcf"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_3"",
-                    ""type"": ""Button"",
-                    ""id"": ""877b19dd-d354-4dbb-85c3-569297532058"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_4"",
-                    ""type"": ""Button"",
-                    ""id"": ""a3856589-5ddd-4ede-bb36-c584e595f64f"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_5"",
-                    ""type"": ""Button"",
-                    ""id"": ""013230d9-e371-40f2-b40d-14025d9a2e66"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_6"",
-                    ""type"": ""Button"",
-                    ""id"": ""c3c991fb-5e31-4094-b54d-35f1ce5a7def"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_7"",
-                    ""type"": ""Button"",
-                    ""id"": ""f350dae2-193c-4132-b188-ede8a916d48b"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_8"",
-                    ""type"": ""Button"",
-                    ""id"": ""e537c0e6-8d91-4f34-8beb-3e0705ef1976"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_9"",
-                    ""type"": ""Button"",
-                    ""id"": ""4ece5294-80c3-4f1e-8c22-fd89f03d8483"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_10"",
-                    ""type"": ""Button"",
-                    ""id"": ""b7dd069f-502a-41bf-aa06-342c946b9c3e"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_11"",
-                    ""type"": ""Button"",
-                    ""id"": ""711589de-9df7-499e-b147-ff4753bd5cf1"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Hotbar_12"",
-                    ""type"": ""Button"",
-                    ""id"": ""f1a057f5-75de-430d-a426-03b7f7da9970"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -331,133 +232,133 @@ namespace Farmer.PlayerInput
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f7f1f93e-8744-4817-9c58-96dec464fb2d"",
+                    ""id"": ""ca15757c-c891-488f-92b8-e017a33d245d"",
                     ""path"": ""<Keyboard>/1"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=0)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_1"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""dbe08f49-7453-46a5-a82c-5cad64e6d522"",
+                    ""id"": ""30deb101-b7a4-4a4f-ac1b-19f166cc9616"",
                     ""path"": ""<Keyboard>/2"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_2"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""31c93a50-4d15-459c-9a4a-e88f54ac3338"",
+                    ""id"": ""0c4b6606-4870-4a65-a96c-6455e498473e"",
                     ""path"": ""<Keyboard>/3"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=2)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_3"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f4e13897-4024-4b46-b064-c559331c3abf"",
+                    ""id"": ""77f17b57-eb6e-4f77-8a57-2fbc5a98dd68"",
                     ""path"": ""<Keyboard>/4"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=3)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_4"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""500ba096-0c80-4697-b581-c256311c2e30"",
+                    ""id"": ""c54d5fcf-e82f-4ed6-88be-d475c4960103"",
                     ""path"": ""<Keyboard>/5"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=4)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_5"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e0bf7b13-af12-484c-884e-ed0c083c21ab"",
+                    ""id"": ""aea25774-6890-4cb8-ac8d-ab10a9430533"",
                     ""path"": ""<Keyboard>/6"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=5)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_6"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""49016ffb-5cb1-4e81-b785-18d7ef4efacb"",
+                    ""id"": ""f13e4138-3272-47f4-9106-93ecdab27d45"",
                     ""path"": ""<Keyboard>/7"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=6)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_7"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""2b9db9f5-c693-4850-b68e-88e25eb98eb3"",
+                    ""id"": ""c93a5181-b77d-47c6-a193-4da09b4c54eb"",
                     ""path"": ""<Keyboard>/8"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=7)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_8"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ebd4525d-76f8-480a-a7fb-59e82cf2f3f5"",
+                    ""id"": ""74a0e5bc-3ab7-400f-be06-c19d537ebf67"",
                     ""path"": ""<Keyboard>/9"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=8)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_9"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""6f3e7ab4-26d8-441d-9b55-251d4ce7b316"",
+                    ""id"": ""4cdee9ca-0123-4bfa-8982-7a56aeec72d9"",
                     ""path"": ""<Keyboard>/0"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=9)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_10"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""dcf8a764-27d6-4f78-8a70-ad2588f6d9f9"",
+                    ""id"": ""a3fdc2b7-3b00-44ca-82ba-8c40a6581d54"",
                     ""path"": ""<Keyboard>/minus"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=10)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_11"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7544df21-4a5a-45bf-b4f1-3d3672bbc11a"",
+                    ""id"": ""41e161ba-4ecc-41bb-9782-7827cf70ae83"",
                     ""path"": ""<Keyboard>/equals"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""Scale(factor=11)"",
                     ""groups"": """",
-                    ""action"": ""Hotbar_12"",
+                    ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -471,18 +372,7 @@ namespace Farmer.PlayerInput
             m_Gameplay_WASD = m_Gameplay.FindAction("WASD", throwIfNotFound: true);
             m_Gameplay_Inventory = m_Gameplay.FindAction("Inventory", throwIfNotFound: true);
             m_Gameplay_Escape = m_Gameplay.FindAction("Escape", throwIfNotFound: true);
-            m_Gameplay_Hotbar_1 = m_Gameplay.FindAction("Hotbar_1", throwIfNotFound: true);
-            m_Gameplay_Hotbar_2 = m_Gameplay.FindAction("Hotbar_2", throwIfNotFound: true);
-            m_Gameplay_Hotbar_3 = m_Gameplay.FindAction("Hotbar_3", throwIfNotFound: true);
-            m_Gameplay_Hotbar_4 = m_Gameplay.FindAction("Hotbar_4", throwIfNotFound: true);
-            m_Gameplay_Hotbar_5 = m_Gameplay.FindAction("Hotbar_5", throwIfNotFound: true);
-            m_Gameplay_Hotbar_6 = m_Gameplay.FindAction("Hotbar_6", throwIfNotFound: true);
-            m_Gameplay_Hotbar_7 = m_Gameplay.FindAction("Hotbar_7", throwIfNotFound: true);
-            m_Gameplay_Hotbar_8 = m_Gameplay.FindAction("Hotbar_8", throwIfNotFound: true);
-            m_Gameplay_Hotbar_9 = m_Gameplay.FindAction("Hotbar_9", throwIfNotFound: true);
-            m_Gameplay_Hotbar_10 = m_Gameplay.FindAction("Hotbar_10", throwIfNotFound: true);
-            m_Gameplay_Hotbar_11 = m_Gameplay.FindAction("Hotbar_11", throwIfNotFound: true);
-            m_Gameplay_Hotbar_12 = m_Gameplay.FindAction("Hotbar_12", throwIfNotFound: true);
+            m_Gameplay_Hotbar = m_Gameplay.FindAction("Hotbar", throwIfNotFound: true);
         }
 
         ~@InputActions()
@@ -566,18 +456,7 @@ namespace Farmer.PlayerInput
         private readonly InputAction m_Gameplay_WASD;
         private readonly InputAction m_Gameplay_Inventory;
         private readonly InputAction m_Gameplay_Escape;
-        private readonly InputAction m_Gameplay_Hotbar_1;
-        private readonly InputAction m_Gameplay_Hotbar_2;
-        private readonly InputAction m_Gameplay_Hotbar_3;
-        private readonly InputAction m_Gameplay_Hotbar_4;
-        private readonly InputAction m_Gameplay_Hotbar_5;
-        private readonly InputAction m_Gameplay_Hotbar_6;
-        private readonly InputAction m_Gameplay_Hotbar_7;
-        private readonly InputAction m_Gameplay_Hotbar_8;
-        private readonly InputAction m_Gameplay_Hotbar_9;
-        private readonly InputAction m_Gameplay_Hotbar_10;
-        private readonly InputAction m_Gameplay_Hotbar_11;
-        private readonly InputAction m_Gameplay_Hotbar_12;
+        private readonly InputAction m_Gameplay_Hotbar;
         /// <summary>
         /// Provides access to input actions defined in input action map "Gameplay".
         /// </summary>
@@ -602,53 +481,9 @@ namespace Farmer.PlayerInput
             /// </summary>
             public InputAction @Escape => m_Wrapper.m_Gameplay_Escape;
             /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_1".
+            /// Provides access to the underlying input action "Gameplay/Hotbar".
             /// </summary>
-            public InputAction @Hotbar_1 => m_Wrapper.m_Gameplay_Hotbar_1;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_2".
-            /// </summary>
-            public InputAction @Hotbar_2 => m_Wrapper.m_Gameplay_Hotbar_2;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_3".
-            /// </summary>
-            public InputAction @Hotbar_3 => m_Wrapper.m_Gameplay_Hotbar_3;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_4".
-            /// </summary>
-            public InputAction @Hotbar_4 => m_Wrapper.m_Gameplay_Hotbar_4;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_5".
-            /// </summary>
-            public InputAction @Hotbar_5 => m_Wrapper.m_Gameplay_Hotbar_5;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_6".
-            /// </summary>
-            public InputAction @Hotbar_6 => m_Wrapper.m_Gameplay_Hotbar_6;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_7".
-            /// </summary>
-            public InputAction @Hotbar_7 => m_Wrapper.m_Gameplay_Hotbar_7;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_8".
-            /// </summary>
-            public InputAction @Hotbar_8 => m_Wrapper.m_Gameplay_Hotbar_8;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_9".
-            /// </summary>
-            public InputAction @Hotbar_9 => m_Wrapper.m_Gameplay_Hotbar_9;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_10".
-            /// </summary>
-            public InputAction @Hotbar_10 => m_Wrapper.m_Gameplay_Hotbar_10;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_11".
-            /// </summary>
-            public InputAction @Hotbar_11 => m_Wrapper.m_Gameplay_Hotbar_11;
-            /// <summary>
-            /// Provides access to the underlying input action "Gameplay/Hotbar_12".
-            /// </summary>
-            public InputAction @Hotbar_12 => m_Wrapper.m_Gameplay_Hotbar_12;
+            public InputAction @Hotbar => m_Wrapper.m_Gameplay_Hotbar;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -684,42 +519,9 @@ namespace Farmer.PlayerInput
                 @Escape.started += instance.OnEscape;
                 @Escape.performed += instance.OnEscape;
                 @Escape.canceled += instance.OnEscape;
-                @Hotbar_1.started += instance.OnHotbar_1;
-                @Hotbar_1.performed += instance.OnHotbar_1;
-                @Hotbar_1.canceled += instance.OnHotbar_1;
-                @Hotbar_2.started += instance.OnHotbar_2;
-                @Hotbar_2.performed += instance.OnHotbar_2;
-                @Hotbar_2.canceled += instance.OnHotbar_2;
-                @Hotbar_3.started += instance.OnHotbar_3;
-                @Hotbar_3.performed += instance.OnHotbar_3;
-                @Hotbar_3.canceled += instance.OnHotbar_3;
-                @Hotbar_4.started += instance.OnHotbar_4;
-                @Hotbar_4.performed += instance.OnHotbar_4;
-                @Hotbar_4.canceled += instance.OnHotbar_4;
-                @Hotbar_5.started += instance.OnHotbar_5;
-                @Hotbar_5.performed += instance.OnHotbar_5;
-                @Hotbar_5.canceled += instance.OnHotbar_5;
-                @Hotbar_6.started += instance.OnHotbar_6;
-                @Hotbar_6.performed += instance.OnHotbar_6;
-                @Hotbar_6.canceled += instance.OnHotbar_6;
-                @Hotbar_7.started += instance.OnHotbar_7;
-                @Hotbar_7.performed += instance.OnHotbar_7;
-                @Hotbar_7.canceled += instance.OnHotbar_7;
-                @Hotbar_8.started += instance.OnHotbar_8;
-                @Hotbar_8.performed += instance.OnHotbar_8;
-                @Hotbar_8.canceled += instance.OnHotbar_8;
-                @Hotbar_9.started += instance.OnHotbar_9;
-                @Hotbar_9.performed += instance.OnHotbar_9;
-                @Hotbar_9.canceled += instance.OnHotbar_9;
-                @Hotbar_10.started += instance.OnHotbar_10;
-                @Hotbar_10.performed += instance.OnHotbar_10;
-                @Hotbar_10.canceled += instance.OnHotbar_10;
-                @Hotbar_11.started += instance.OnHotbar_11;
-                @Hotbar_11.performed += instance.OnHotbar_11;
-                @Hotbar_11.canceled += instance.OnHotbar_11;
-                @Hotbar_12.started += instance.OnHotbar_12;
-                @Hotbar_12.performed += instance.OnHotbar_12;
-                @Hotbar_12.canceled += instance.OnHotbar_12;
+                @Hotbar.started += instance.OnHotbar;
+                @Hotbar.performed += instance.OnHotbar;
+                @Hotbar.canceled += instance.OnHotbar;
             }
 
             /// <summary>
@@ -740,42 +542,9 @@ namespace Farmer.PlayerInput
                 @Escape.started -= instance.OnEscape;
                 @Escape.performed -= instance.OnEscape;
                 @Escape.canceled -= instance.OnEscape;
-                @Hotbar_1.started -= instance.OnHotbar_1;
-                @Hotbar_1.performed -= instance.OnHotbar_1;
-                @Hotbar_1.canceled -= instance.OnHotbar_1;
-                @Hotbar_2.started -= instance.OnHotbar_2;
-                @Hotbar_2.performed -= instance.OnHotbar_2;
-                @Hotbar_2.canceled -= instance.OnHotbar_2;
-                @Hotbar_3.started -= instance.OnHotbar_3;
-                @Hotbar_3.performed -= instance.OnHotbar_3;
-                @Hotbar_3.canceled -= instance.OnHotbar_3;
-                @Hotbar_4.started -= instance.OnHotbar_4;
-                @Hotbar_4.performed -= instance.OnHotbar_4;
-                @Hotbar_4.canceled -= instance.OnHotbar_4;
-                @Hotbar_5.started -= instance.OnHotbar_5;
-                @Hotbar_5.performed -= instance.OnHotbar_5;
-                @Hotbar_5.canceled -= instance.OnHotbar_5;
-                @Hotbar_6.started -= instance.OnHotbar_6;
-                @Hotbar_6.performed -= instance.OnHotbar_6;
-                @Hotbar_6.canceled -= instance.OnHotbar_6;
-                @Hotbar_7.started -= instance.OnHotbar_7;
-                @Hotbar_7.performed -= instance.OnHotbar_7;
-                @Hotbar_7.canceled -= instance.OnHotbar_7;
-                @Hotbar_8.started -= instance.OnHotbar_8;
-                @Hotbar_8.performed -= instance.OnHotbar_8;
-                @Hotbar_8.canceled -= instance.OnHotbar_8;
-                @Hotbar_9.started -= instance.OnHotbar_9;
-                @Hotbar_9.performed -= instance.OnHotbar_9;
-                @Hotbar_9.canceled -= instance.OnHotbar_9;
-                @Hotbar_10.started -= instance.OnHotbar_10;
-                @Hotbar_10.performed -= instance.OnHotbar_10;
-                @Hotbar_10.canceled -= instance.OnHotbar_10;
-                @Hotbar_11.started -= instance.OnHotbar_11;
-                @Hotbar_11.performed -= instance.OnHotbar_11;
-                @Hotbar_11.canceled -= instance.OnHotbar_11;
-                @Hotbar_12.started -= instance.OnHotbar_12;
-                @Hotbar_12.performed -= instance.OnHotbar_12;
-                @Hotbar_12.canceled -= instance.OnHotbar_12;
+                @Hotbar.started -= instance.OnHotbar;
+                @Hotbar.performed -= instance.OnHotbar;
+                @Hotbar.canceled -= instance.OnHotbar;
             }
 
             /// <summary>
@@ -838,89 +607,12 @@ namespace Farmer.PlayerInput
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnEscape(InputAction.CallbackContext context);
             /// <summary>
-            /// Method invoked when associated input action "Hotbar_1" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// Method invoked when associated input action "Hotbar" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
             /// </summary>
             /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_1(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_2" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_2(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_3" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_3(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_4" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_4(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_5" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_5(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_6" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_6(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_7" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_7(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_8" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_8(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_9" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_9(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_10" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_10(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_11" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_11(InputAction.CallbackContext context);
-            /// <summary>
-            /// Method invoked when associated input action "Hotbar_12" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-            /// </summary>
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-            void OnHotbar_12(InputAction.CallbackContext context);
+            void OnHotbar(InputAction.CallbackContext context);
         }
     }
 }

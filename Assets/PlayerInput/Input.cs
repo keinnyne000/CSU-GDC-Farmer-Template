@@ -1,5 +1,6 @@
 using System;
 using Farmer.GlobalStateManagement;
+using Farmer.Player;
 using UnityEngine;
 
 namespace Farmer.PlayerInput
@@ -7,6 +8,7 @@ namespace Farmer.PlayerInput
     public class Input : MonoBehaviour
     {
         InputActions inputActions;
+        [SerializeField] PlayerInventory playerInventory;
         
         private void OnEnable()
         {
@@ -23,6 +25,14 @@ namespace Farmer.PlayerInput
             inputActions.Gameplay.Inventory.performed -= _ => OnInventoryPressed();
             
             inputActions.Disable();
+        }
+
+        private void Update()
+        {
+            if (inputActions.Gameplay.Hotbar.inProgress)
+            {
+                playerInventory.SetHotbarIndex((int)inputActions.Gameplay.Hotbar.ReadValue<float>());
+            }
         }
 
         void OnEscapePressed()

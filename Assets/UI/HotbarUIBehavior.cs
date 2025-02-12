@@ -19,6 +19,7 @@ namespace Farmer.UI
         private void Start()
         {
             playerInventory.Inventory.OnUpdated += UpdateUI;
+            playerInventory.OnHotbarIndexChanged += OnHotbarIndexChanged;
             
             UpdateUI();
         }
@@ -32,6 +33,15 @@ namespace Farmer.UI
         private void OnDestroy()
         {
             playerInventory.Inventory.OnUpdated -= UpdateUI;
+            playerInventory.OnHotbarIndexChanged -= OnHotbarIndexChanged;
+        }
+        
+        void OnHotbarIndexChanged(int index)
+        {
+            for(int i = 0; i < slotUis.Length; i++)
+            {
+                slotUis[i].Highlight(i == index);
+            }
         }
         
         void OnRequestItemMove(int fromSlot, int toSlot)
