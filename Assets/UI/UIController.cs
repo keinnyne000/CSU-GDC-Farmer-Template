@@ -9,7 +9,7 @@ namespace Farmer.UI
         [SerializeField] GameObject launchUI;
         [SerializeField] GameObject gameUI;
 
-        void OnEnable()
+        void Start()
         {
             GlobalStateManagement.GlobalState.Instance.OnGameStateChanged += OnGameStateChanged;
         }
@@ -22,7 +22,7 @@ namespace Farmer.UI
             gameUI.SetActive(state == GlobalStateManagement.GameState.InGame);
         }
         
-        void OnDisable()
+        void OnDestroy()
         {
             GlobalStateManagement.GlobalState.Instance.OnGameStateChanged -= OnGameStateChanged;
         }
