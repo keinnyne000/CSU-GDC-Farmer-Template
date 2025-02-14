@@ -3708,6 +3708,7 @@ MonoBehaviour:
   TEST_item: {fileID: 11400000, guid: ff32332b6fa3afa498eb24286e673ab7, type: 2}
   <Capacity>k__BackingField: 36
   <HotbarCapacity>k__BackingField: 12
+  itemBehaviorRegistry: {fileID: 11400000, guid: a15e27d3a9d1c054c99fafb43a15edf2, type: 2}
 --- !u!4 &1609101190
 Transform:
   m_ObjectHideFlags: 0
