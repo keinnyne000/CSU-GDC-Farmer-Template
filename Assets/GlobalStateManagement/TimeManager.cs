@@ -15,6 +15,8 @@ namespace Farmer.GlobalStateManagement
             GlobalState.Instance.OnGameStateChanged -= OnGameStateChanged;
         }
         
+        // This method is used to control the time scale of the game based on the game state.
+        // It subscribes to the OnGameStateChanged event in the GlobalState class to react to changes.
         void OnGameStateChanged(GameState state)
         {
             switch (state)
