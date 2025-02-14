@@ -1,8 +1,10 @@
 # CSU Game Developer's Club Farmer Template
 
-This is a Unity 6000,.0.37f1 game template file designed for use in CSU Game Developer's Club game jams, though feel free to use it no matter whenever or whoever you are! 
+This is a Unity 6000.0.37f1 game template file designed for use in CSU Game Developer's Club game jams, though feel free to use it no matter whenever or whoever you are! 
 
-The temmplate will be most useful for new or busy Unity developers but ideas can be applied universally.
+The template will be most useful for new or busy Unity developers but ideas can be applied universally. 
+
+A major benefit of using this template for Game Developer's Club members is that you can always ask me questions about this in the discord (@KeinNyne).
 
 
 ## Features:
