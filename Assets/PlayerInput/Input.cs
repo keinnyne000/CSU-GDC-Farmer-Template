@@ -17,22 +17,28 @@ namespace Farmer.PlayerInput
             
             inputActions.Gameplay.Escape.performed += _ => OnEscapePressed();
             inputActions.Gameplay.Inventory.performed += _ => OnInventoryPressed();
+            inputActions.Gameplay.Hotbar.performed += _ => OnHotbarPressed();
+            inputActions.Gameplay.LMB.performed += _ => OnLMBPressed();
         }
         
         private void OnDisable()
         {
             inputActions.Gameplay.Escape.performed -= _ => OnEscapePressed();
             inputActions.Gameplay.Inventory.performed -= _ => OnInventoryPressed();
+            inputActions.Gameplay.Hotbar.performed -= _ => OnHotbarPressed();
+            inputActions.Gameplay.LMB.performed -= _ => OnLMBPressed();
             
             inputActions.Disable();
         }
 
-        private void Update()
+        void OnHotbarPressed()
+        { 
+            playerInventory.SetHotbarIndex((int)inputActions.Gameplay.Hotbar.ReadValue<float>());
+        }
+        
+        void OnLMBPressed()
         {
-            if (inputActions.Gameplay.Hotbar.inProgress)
-            {
-                playerInventory.SetHotbarIndex((int)inputActions.Gameplay.Hotbar.ReadValue<float>());
-            }
+            playerInventory.UseHotbarItem();
         }
 
         void OnEscapePressed()

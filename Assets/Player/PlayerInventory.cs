@@ -2,7 +2,6 @@ using System;
 using Farmer.Inventories;
 using Farmer.Items;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Farmer.Player
 {
@@ -30,6 +29,15 @@ namespace Farmer.Player
         private void Start()
         {
             SetHotbarIndex(0);
+        }
+
+        public void UseHotbarItem()
+        {
+            if (Inventory.HasItem(hotbarIndex))
+            {
+                var item =Inventory.PeekItem(hotbarIndex);
+                Debug.Log(item.Item2);
+            }
         }
 
         public void SetHotbarIndex(int index)

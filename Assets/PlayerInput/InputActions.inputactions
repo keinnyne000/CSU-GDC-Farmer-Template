@@ -40,6 +40,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "LMB",
+                    "type": "Button",
+                    "id": "ec41ee26-424f-45f9-99e7-b9d3b9fe6fd5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RMB",
+                    "type": "Button",
+                    "id": "c0f25583-0050-4950-b1a7-a748c95d6918",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -271,6 +289,28 @@
                     "processors": "Scale(factor=11)",
                     "groups": "",
                     "action": "Hotbar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "48d1afc4-0e5f-4a4d-84ae-7c28f752f4e5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LMB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9618f3cc-e42e-4335-9749-9e4caee2778e",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RMB",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

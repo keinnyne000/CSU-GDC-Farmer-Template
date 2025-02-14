@@ -128,6 +128,24 @@ namespace Farmer.PlayerInput
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""LMB"",
+                    ""type"": ""Button"",
+                    ""id"": ""ec41ee26-424f-45f9-99e7-b9d3b9fe6fd5"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RMB"",
+                    ""type"": ""Button"",
+                    ""id"": ""c0f25583-0050-4950-b1a7-a748c95d6918"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -361,6 +379,28 @@ namespace Farmer.PlayerInput
                     ""action"": ""Hotbar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""48d1afc4-0e5f-4a4d-84ae-7c28f752f4e5"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LMB"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9618f3cc-e42e-4335-9749-9e4caee2778e"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RMB"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -373,6 +413,8 @@ namespace Farmer.PlayerInput
             m_Gameplay_Inventory = m_Gameplay.FindAction("Inventory", throwIfNotFound: true);
             m_Gameplay_Escape = m_Gameplay.FindAction("Escape", throwIfNotFound: true);
             m_Gameplay_Hotbar = m_Gameplay.FindAction("Hotbar", throwIfNotFound: true);
+            m_Gameplay_LMB = m_Gameplay.FindAction("LMB", throwIfNotFound: true);
+            m_Gameplay_RMB = m_Gameplay.FindAction("RMB", throwIfNotFound: true);
         }
 
         ~@InputActions()
@@ -457,6 +499,8 @@ namespace Farmer.PlayerInput
         private readonly InputAction m_Gameplay_Inventory;
         private readonly InputAction m_Gameplay_Escape;
         private readonly InputAction m_Gameplay_Hotbar;
+        private readonly InputAction m_Gameplay_LMB;
+        private readonly InputAction m_Gameplay_RMB;
         /// <summary>
         /// Provides access to input actions defined in input action map "Gameplay".
         /// </summary>
@@ -484,6 +528,14 @@ namespace Farmer.PlayerInput
             /// Provides access to the underlying input action "Gameplay/Hotbar".
             /// </summary>
             public InputAction @Hotbar => m_Wrapper.m_Gameplay_Hotbar;
+            /// <summary>
+            /// Provides access to the underlying input action "Gameplay/LMB".
+            /// </summary>
+            public InputAction @LMB => m_Wrapper.m_Gameplay_LMB;
+            /// <summary>
+            /// Provides access to the underlying input action "Gameplay/RMB".
+            /// </summary>
+            public InputAction @RMB => m_Wrapper.m_Gameplay_RMB;
             /// <summary>
             /// Provides access to the underlying input action map instance.
             /// </summary>
@@ -522,6 +574,12 @@ namespace Farmer.PlayerInput
                 @Hotbar.started += instance.OnHotbar;
                 @Hotbar.performed += instance.OnHotbar;
                 @Hotbar.canceled += instance.OnHotbar;
+                @LMB.started += instance.OnLMB;
+                @LMB.performed += instance.OnLMB;
+                @LMB.canceled += instance.OnLMB;
+                @RMB.started += instance.OnRMB;
+                @RMB.performed += instance.OnRMB;
+                @RMB.canceled += instance.OnRMB;
             }
 
             /// <summary>
@@ -545,6 +603,12 @@ namespace Farmer.PlayerInput
                 @Hotbar.started -= instance.OnHotbar;
                 @Hotbar.performed -= instance.OnHotbar;
                 @Hotbar.canceled -= instance.OnHotbar;
+                @LMB.started -= instance.OnLMB;
+                @LMB.performed -= instance.OnLMB;
+                @LMB.canceled -= instance.OnLMB;
+                @RMB.started -= instance.OnRMB;
+                @RMB.performed -= instance.OnRMB;
+                @RMB.canceled -= instance.OnRMB;
             }
 
             /// <summary>
@@ -613,6 +677,20 @@ namespace Farmer.PlayerInput
             /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
             /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
             void OnHotbar(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "LMB" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnLMB(InputAction.CallbackContext context);
+            /// <summary>
+            /// Method invoked when associated input action "RMB" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+            /// </summary>
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+            /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+            void OnRMB(InputAction.CallbackContext context);
         }
     }
 }
