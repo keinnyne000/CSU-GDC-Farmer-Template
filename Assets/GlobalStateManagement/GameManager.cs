@@ -14,7 +14,7 @@ namespace Farmer.GlobalStateManagement
         [SerializeField] private GameObject player;
         [SerializeField] private PlayerInventory inventory;
         [SerializeField] private ItemData defaultItem;
-        private void Awake()
+        private void Start()
         {
             SetupWorld();
         }
@@ -26,14 +26,18 @@ namespace Farmer.GlobalStateManagement
 
         void SetupWorld()
         {
-            Debug.Log("saving");
             if(SaveLoadHandler.HasSaveFile())
             {
                 WorldSaveData saveData = SaveLoadHandler.LoadGame();
                 // Load the player's position
                 player.transform.position = saveData.PlayerPosition;
                 // Load the player's inventory
-                inventory.Inventory.SetAll(saveData.PlayerInventory);
+                (uint, int)[] playerInventory = new (uint, int)[saveData.PlayerInventoryIds.Length];
+                for (int i = 0; i < saveData.PlayerInventoryIds.Length; i++)
+                {
+                    playerInventory[i] = (saveData.PlayerInventoryIds[i], saveData.PlayerInventoryQuantities[i]);
+                }
+                inventory.Inventory.SetAll(playerInventory);
             }
             else
             {
@@ -53,7 +57,16 @@ namespace Farmer.GlobalStateManagement
             // Save the player's inventory
             var playerInventory = Array.Empty<(uint, int)>();
             
-            SaveLoadHandler.SaveGame(playerPosition, playerInventory);
+            uint[] playerInventoryIds = new uint[inventory.Capacity];
+            int[] playerInventoryQuantities = new int[inventory.Capacity];
+            for (int i = 0; i < inventory.Capacity; i++)
+            {
+                var item = inventory.Inventory.PeekItem(i);
+                playerInventoryIds[i] = item.Item1;
+                playerInventoryQuantities[i] = item.Item2;
+            }
+            
+            SaveLoadHandler.SaveGame(playerPosition, playerInventoryIds, playerInventoryQuantities);
         }
 
     }

@@ -5,16 +5,17 @@ namespace Farmer.SavingAndLoading
     // This is a simple class that uses the IOHandler class to save and load the world!
     public static class SaveLoadHandler
     {
-        const string FILE_SAVE_NAME = "savefile";
+        const string FILE_SAVE_NAME = "save";
         
         public static bool HasSaveFile()
         {
-            return IOHandler.FileExists(Application.persistentDataPath + "/" + FILE_SAVE_NAME);
+            if(IOHandler.FileExists(Application.persistentDataPath + "/" + FILE_SAVE_NAME) == false) return false;
+            return IOHandler.FileIs<WorldSaveData>(Application.persistentDataPath + "/" + FILE_SAVE_NAME);
         }
         
-        public static void SaveGame(Vector2 playerPosition, (uint, int)[] playerInventory)
+        public static void SaveGame(Vector2 playerPosition, uint[] playerInventoryIds, int[] playerInventoryQuantities)
         {
-            WorldSaveData saveData = new WorldSaveData(playerPosition, playerInventory);
+            WorldSaveData saveData = new WorldSaveData(playerPosition, playerInventoryIds, playerInventoryQuantities);
             IOHandler.WriteJSON(Application.persistentDataPath + "/" + FILE_SAVE_NAME, saveData);
         }
         

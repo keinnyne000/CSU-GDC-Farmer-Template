@@ -16,7 +16,6 @@ namespace Farmer.Player
         public event Action<int> OnHotbarIndexChanged;
         
         // This is a reference used to add an item to the inventory in the OnEnable method.
-        [SerializeField] private ItemData TEST_item;
         [field: SerializeField] public int Capacity { get; private set; } = 36;
         [field: SerializeField] public int HotbarCapacity { get; private set; } = 12;
         [SerializeField] ItemBehaviorRegistry itemBehaviorRegistry;
@@ -26,14 +25,8 @@ namespace Farmer.Player
         private void OnEnable()
         {
             Inventory = new ArrayInventory(Capacity);
-            TEST_AddItem();
         }
-
-        void TEST_AddItem()
-        {
-            Inventory.PushItem(TEST_item.Id, 16, 0);
-        }
-
+        
         private void Start()
         {
             SetHotbarIndex(0);

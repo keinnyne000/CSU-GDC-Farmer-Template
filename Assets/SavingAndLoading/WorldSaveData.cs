@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Farmer.SavingAndLoading
 {
@@ -8,13 +7,15 @@ namespace Farmer.SavingAndLoading
     [System.Serializable]
     public class WorldSaveData
     {
-        public WorldSaveData(Vector2 playerPosition, (uint, int)[] playerInventory)
+        public WorldSaveData(Vector2 playerPosition, uint[] playerInventoryIds, int[] playerInventoryQuantities)
         {
             this.PlayerPosition = playerPosition;
-            this.PlayerInventory = playerInventory;
+            this.PlayerInventoryIds = playerInventoryIds;
+            this.PlayerInventoryQuantities = playerInventoryQuantities;
         }
         
         public Vector2 PlayerPosition;
-        public (uint, int)[] PlayerInventory;
+        public uint[] PlayerInventoryIds;
+        public int[] PlayerInventoryQuantities;
     }
 }

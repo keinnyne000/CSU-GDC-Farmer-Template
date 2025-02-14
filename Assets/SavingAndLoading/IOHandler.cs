@@ -23,5 +23,10 @@ namespace Farmer.SavingAndLoading
         {
             return System.IO.File.Exists(path);
         }
+
+        public static bool FileIs<T>(string path)
+        {
+            return System.IO.File.Exists(path) && JsonUtility.FromJson<T>(System.IO.File.ReadAllText(path)) != null;
+        }
     }
 }
