@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 namespace Farmer.Items
 {
+    // This class is a ScriptableObject, so it can be created as an asset in the Unity Editor.
     [CreateAssetMenu(fileName = "ItemData", menuName = "Items/ItemData")]
     public class ItemData : ScriptableObject
     {

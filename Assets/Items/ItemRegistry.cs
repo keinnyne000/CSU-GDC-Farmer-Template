@@ -4,6 +4,8 @@ using UnityEngine;
 
 namespace Farmer.Items
 {
+    // This class is a ScriptableObject, so it can be created as an asset in the Unity Editor.
+    // It's used to store a list of ItemData, and to retrieve the correct item for a given ID.
     [CreateAssetMenu(menuName = "Items/ItemRegistry")]
     public class ItemRegistry : ScriptableObject
     {
