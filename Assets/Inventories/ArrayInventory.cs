@@ -3,6 +3,8 @@ using System.Linq;
 
 namespace Farmer.Inventories
 {
+    // This class implements the IInventory interface using an array
+    // It is used to store items in the player's inventory
     public class ArrayInventory : IInventory
     {
         private (uint, int)[] items;

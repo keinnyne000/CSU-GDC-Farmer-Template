@@ -4,6 +4,8 @@ using System.Linq;
 
 namespace Farmer.Inventories
 {
+    // This is another implementation of the IInventory interface
+    // It is not used in the game, but it is a good example of how to implement the interface
     public class ValueListInventory : IInventory
     {
         public int Capacity { get; private set; }

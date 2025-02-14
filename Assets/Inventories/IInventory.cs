@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Farmer.Inventories
 {
+    // This interface defines the methods that an inventory should implement
+    // Interfaces are extremely useful in Unity as they are more flexible than inheritance
+    // See how they are used in the ArrayInventory and ValueListInventory classes
     public interface IInventory
     {
         public event Action OnUpdated;
