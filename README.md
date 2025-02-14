@@ -26,7 +26,7 @@ Make sure you have the following installed:
 - [GitHub Desktop](https://desktop.github.com/)
 - [GitHub Account](https://github.com/)
 - [Unity Hub](https://unity.com/download)
-- [Unity 6.x](https://unity.com/releases)
+- [Unity 6.x](https://unity.com/releases) (Can be installed through Unity Hub)
 
 ### Beginner-Friendly Setup (Using GitHub Desktop)
 #### 1. Fork the Repository
@@ -108,6 +108,7 @@ You're all set! 🎉 Happy coding!
 
 # Attributions:
 - Placeholder Tile Set Credit: Michele "Buch" Bucelli, https://opengameart.org/content/outdoor-tiles-again
+- Player Sprite & Animations: emanuelledev, https://emanuelledev.itch.io/farm-rpg
 
 
 
