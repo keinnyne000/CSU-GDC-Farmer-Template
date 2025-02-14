@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Farmer.UI
 {
+    // This class activates or deactivates the UI elements based on the current game state.
     public class UIController : MonoBehaviour
     {
         [SerializeField] GameObject inventoryUI;

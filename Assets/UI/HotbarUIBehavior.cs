@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Farmer.UI
 {
+    // This class does two things:
+    // 1. It creates the UI for the hotbar, and updates it when the player's inventory changes.
+    // 2. It listens to the player's hotbar index changes, and highlights the correct slot.
     public class HotbarUIBehavior : MonoBehaviour
     {
         [SerializeField] Transform hotbarSlotParent;

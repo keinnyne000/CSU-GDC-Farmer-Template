@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 namespace Farmer.UI
 {
+    // This class is used to display an item in the inventory UI.
+    // We use unity's built-in event interfaces to handle dragging the item.
     public class InventoryItemUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
     {
         [HideInInspector] public Transform parentToReturnTo = null;

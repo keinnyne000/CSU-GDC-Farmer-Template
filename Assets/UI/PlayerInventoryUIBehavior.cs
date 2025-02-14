@@ -5,6 +5,8 @@ using UnityEngine;
 
 namespace Farmer.UI
 {
+    // This class is used to update the player's inventory UI.
+    // It listens to the player's inventory and updates the UI when the inventory changes.
     public class PlayerInventoryUIBehavior : MonoBehaviour
     {
         [Header("Slots")]

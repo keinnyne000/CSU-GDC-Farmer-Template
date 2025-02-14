@@ -5,6 +5,8 @@ using UnityEngine;
 
 namespace Farmer.PlayerInput
 {
+    // This class manages an input actions asset, and listens for input events
+    // Here's a good video on Unity's very good input system: https://www.youtube.com/watch?v=m5WsmlEOFiA
     public class Input : MonoBehaviour
     {
         InputActions inputActions;
