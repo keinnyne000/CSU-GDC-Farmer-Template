@@ -13,6 +13,11 @@ namespace Farmer.SavingAndLoading
             return IOHandler.FileIs<WorldSaveData>(Application.persistentDataPath + "/" + FILE_SAVE_NAME);
         }
         
+        public static void DeleteSaveFile()
+        {
+            IOHandler.DeleteFile(Application.persistentDataPath + "/" + FILE_SAVE_NAME);
+        }
+        
         public static void SaveGame(Vector2 playerPosition, uint[] playerInventoryIds, int[] playerInventoryQuantities)
         {
             WorldSaveData saveData = new WorldSaveData(playerPosition, playerInventoryIds, playerInventoryQuantities);

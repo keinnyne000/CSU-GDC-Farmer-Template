@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Farmer.GlobalStateManagement
 {
-    // This class is used to manage the game state, such as saving and loading the world.
+    // This class is mainly used to manage the game state, such as saving and loading the world.
     // You have to be extremely careful when making classes like this, as they can easily become entangled with other systems.
     // Setting up the world or saving it is a good use case for a class like this.
     public class GameManager : MonoBehaviour
@@ -22,6 +22,24 @@ namespace Farmer.GlobalStateManagement
         private void OnApplicationQuit()
         {
             SaveWorld();
+        }
+        
+        // This method is used to exit the game, called from the UI (pause menu exit button).
+        // Flags are used to determine if the game is running in the editor or not.
+        public void ExitGame()
+        {
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #else
+            Application.Quit();
+            #endif
+        }
+        
+        // This method is used to reset the game, called from the UI (pause menu reset button).
+        public void ResetGame()
+        {
+            SaveLoadHandler.DeleteSaveFile();
+            LoadDefaultWorld();
         }
 
         void SetupWorld()
@@ -41,11 +59,7 @@ namespace Farmer.GlobalStateManagement
             }
             else
             {
-                // Set the player's position to the starting position
-                player.transform.position = Vector2.zero;
-                
-                // Set the player's inventory to the starting inventory
-                inventory.Inventory.PushItem(defaultItem.Id, 16, 0);
+                LoadDefaultWorld();
             }
         }
 
@@ -68,6 +82,14 @@ namespace Farmer.GlobalStateManagement
             
             SaveLoadHandler.SaveGame(playerPosition, playerInventoryIds, playerInventoryQuantities);
         }
-
+        
+        void LoadDefaultWorld()
+        {
+            // Set the player's position to the starting position
+            player.transform.position = Vector2.zero;
+            
+            // Set the player's inventory to the starting inventory
+            inventory.Inventory.PushItem(defaultItem.Id, 16, 0);
+        }
     }
 }

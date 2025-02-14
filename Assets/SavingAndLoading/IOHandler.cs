@@ -11,6 +11,11 @@ namespace Farmer.SavingAndLoading
             string json = JsonUtility.ToJson(data);
             System.IO.File.WriteAllText(path, json);
         }
+        
+        public static void DeleteFile(string path)
+        {
+            if(FileExists(path)) System.IO.File.Delete(path);
+        }
 
         public static T ReadJSON<T>(string path)
         {
